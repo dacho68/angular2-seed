@@ -477,3 +477,22 @@ You can follow the [Angular 2 change log here](https://github.com/angular/angula
 # License
 
 MIT
+
+# Add the remote, call it "upstream":
+
+git remote add upstream https://github.com/mgechev/angular2-seed.git
+
+# Fetch all the branches of that remote into remote-tracking branches,
+# such as upstream/master:
+
+git fetch upstream
+
+# Make sure that you're on your master branch:
+
+git checkout master
+
+git merge upstream/master
+ 
+# Rewrite your master branch so that any commits of yours that
+# aren't already in upstream/master are replayed on top of that
+# other branch:
